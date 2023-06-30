@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #ecc22b;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  
+  #logo-img {
+    max-height: 50px;
+    margin-right: 5px;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  .nav-links a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* Homepage section styles */
+  #homepage {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .banner-wrapper {
+    margin-bottom: 40px;
+  }
+
+  #homepage > h1{
+    margin-bottom: 40px;
+  }
+  
+  .hero {
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  h1 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffeb8b; 
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+.most-popular-phones{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly; 
+    
+}
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #ffeb8b;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+  }
+  
+
+  /* Product listings */
+@media screen and (min-width: 768px) {
+    #product-listings {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+  
+    .product-grid {
+      width: calc(25% - 50px);
+      margin-bottom: 20px;
+      margin-left: 50px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    .product-grid {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .product-grid {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+  }
+  
+  /*Product details*/
+  .product-info {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .details {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .related-products{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .related-products img {
+    max-height: 150px;
+  }
+
+  #product-details > h3{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+ 
+  /* Shopping Cart Section */
+  #shopping-cart {
+    margin: 40px;
+  }
+  
+  #shopping-cart h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+
+  #shopping-cart table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #shopping-cart th,
+  #shopping-cart td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #shopping-cart thead th {
+    background-color: #f9f9f9;
+  }
+  
+  #shopping-cart tfoot td {
+    font-weight: bold;
+  }
+  
+  #shopping-cart .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  /* Checkout Section */
+  #checkout {
+    margin: 40px;
+  }
+  
+  #checkout h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #checkout form {
+    margin-bottom: 20px;
+  }
+  
+  #checkout label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #checkout input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  #checkout button.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+  
+    #shopping-cart th,
+    #shopping-cart td {
+      font-size: 14px;
+      padding: 5px;
+    }
+  
+    #checkout input[type="text"] {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+  
+  /* User Accounts Section */
+#user-accounts {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    min-height: 400px;
+  }
+  
+  .user-registration,
+  .user-login {
+    width: 300px;
+  }
+  
+  .user-registration h2,
+  .user-login h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .user-registration form,
+  .user-login form {
+    margin-bottom: 20px;
+  }
+  
+  .user-registration label,
+  .user-login label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-registration input[type="text"],
+  .user-registration input[type="email"],
+  .user-registration input[type="password"],
+  .user-login input[type="email"],
+  .user-login input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-registration input[type="submit"],
+  .user-login input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+  
+    #user-accounts {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .user-registration,
+    .user-login {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .user-registration h2,
+    .user-login h2 {
+      font-size: 20px;
+    }
+  
+    .user-registration input[type="submit"],
+    .user-login input[type="submit"] {
+      width: 100%;
+    }
+  }

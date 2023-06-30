@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mobile Marketplace - Shopping Cart</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">
+					<img src="images/Logo.png" id="logo-img" alt="Mobile Plus Logo">
+					<a href="index.html" class="logo">Mobile Plus</a>
+				</div>
+				<ul class="nav-links">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="product_listings.html">Products</a>
+					</li>
+					<li>
+						<a href="cart.html">Cart</a>
+					</li>
+					<li>
+						<a href="users.html">Account</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section id="shopping-cart">
+			<h2>Shopping Cart</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Subtotal</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Iphone 14 Pro Max</td>
+						<td>BGN 2499</td>
+						<td>1</td>
+						<td>BGN 2499</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Total</td>
+						<td>BGN 2499</td>
+					</tr>
+				</tfoot>
+			</table>
+			<a href="#" class="btn">Proceed to Checkout</a>
+		</section>
+		<section id="checkout">
+			<h2>Checkout</h2>
+			<form action="#" method="POST" id="shipping-form">
+				<h3>Shipping Address</h3>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required="">
+				<label for="address">Address</label>
+				<input type="text" id="address" name="address" required="">
+				<label for="city">City</label>
+				<input type="text" id="city" name="city" required="">
+				<label for="country">Country</label>
+				<input type="text" id="country" name="country" required="">
+			</form>
+			<form action="#" method="POST" id="payment-form">
+				<h3>Payment Information</h3>
+				<label for="card-number">Card Number</label>
+				<input type="text" id="card-number" name="card-number" required="">
+				<label for="expiry-date">Expiry Date</label>
+				<input type="text" id="expiry-date" name="expiry-date" required="">
+				<label for="cvv">CVV</label>
+				<input type="text" id="cvv" name="cvv" required="">
+			</form>
+			<button onclick="placeOrder()" class="btn">Place Order</button>
+		</section>
+		<footer>
+			<p>© 2023 Mobile Marketplace. All rights reserved.</p>
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>
